@@ -1,4 +1,4 @@
 .vscode
 .ipynb_checkpoints
 data/*train_aggressiveness.csv
-
+.DS_Store
