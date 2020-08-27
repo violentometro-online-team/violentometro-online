@@ -13,6 +13,6 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.4.6 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "whispering-meadow-80834" #Must be unique in Heroku
+          heroku_app_name: "violentometro-online" #Must be unique in Heroku
           heroku_email: "ivanovishado@gmail.com"
           appdir: "app"
