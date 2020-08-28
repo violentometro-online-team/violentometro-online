@@ -3,7 +3,6 @@ import es_core_news_sm
 import re
 import pandas as pd
 import string
-from sklearn.feature_extraction.text import CountVectorizer
 
 nlp = es_core_news_sm.load()
 
@@ -58,4 +57,12 @@ def predict(text, model, count_vectorizer):
     X["Numero_Palabras_Text"] = text_words_count
     X["Numero_Palabras_Unicas"] = unique_words_count
 
-    return model.predict(X), model.predict_proba(X)
+    prediction_proba = model.predict_proba(X)
+
+    res = {
+        "No discurso de Odio": prediction_proba[0][0],
+        "Discurso de Odio": prediction_proba[0][1],
+        "Discurso de Odio contra Mujeres": prediction_proba[0][2],
+    }
+
+    return res
