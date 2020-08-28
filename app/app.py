@@ -17,13 +17,10 @@ model = load_model()
 CV = load_CV()
 
 st.title("Violentómetro Online")
-st.write(
-    "Prototipo para detectar discurso de odio contra las mujeres en medios digitales escritos."
-)
+st.write("Prototipo para detectar discurso de odio en línea contra mujeres.")
 
 sentence = st.text_area("Ingresa tu mensaje a analizar:")
 
 if sentence:
-    prediction, probability = predict(sentence, model, CV)
-    st.write(prediction)
+    probability = predict(sentence, model, CV)
     st.write(probability)
