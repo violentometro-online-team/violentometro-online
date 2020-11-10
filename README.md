@@ -2,6 +2,8 @@
 
 `Violentómetro Online` is a web app that detects Spanish hate-speech against women online.
 
+To learn more about the project, see the article [Detecting gender-based hate speech in Spanish with Natural Language Processing](https://medium.com/@alejandra.pedroza/detecting-gender-based-hate-speech-in-spanish-with-natural-language-processing-cdbba6ec2f8b).
+
 We would like to express our gratitute to the organizers of [MEX-A3T](https://sites.google.com/view/mex-a3t/) for sharing a labeled dataset for this work.
 
 ## Repo Structure
