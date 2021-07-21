@@ -1,6 +1,4 @@
-emoji==1.4.1
-es-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/es_core_news_sm-3.1.0/es_core_news_sm-3.1.0.tar.gz
-pandas==1.2.5
-scikit-learn==0.22.1
+requests==2.26.0
+scikit-learn==0.24.2
 streamlit==0.84.2
 watchdog==2.1.3
