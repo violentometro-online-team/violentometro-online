@@ -8,6 +8,6 @@ def get_prediction(text):
 
     resp = requests.post(url, json=data)
 
-    pred = resp.json()
+    pred = resp.json()["prediction"]
 
-    return f"La oración tiene un {pred*100}% de presentar discurso de odio."
+    return f"La oración tiene un {pred*100:.2f}% de presentar discurso de odio."
