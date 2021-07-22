@@ -3,7 +3,7 @@ import streamlit as st
 
 
 def get_prediction(text):
-    url = st.secrets["base_url"] + "/predict"
+    url = st.secrets["predict_url"]
     data = {"sentence": text}
 
     resp = requests.post(url, json=data)
