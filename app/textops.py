@@ -1,9 +1,9 @@
+import os
 import requests
-import streamlit as st
 
 
 def get_prediction(text):
-    url = st.secrets["predict_url"]
+    url = os.environ["PREDICTION_URL"]
     data = {"sentence": text}
 
     resp = requests.post(url, json=data)
