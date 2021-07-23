@@ -3,7 +3,7 @@ from textops import get_prediction
 
 
 st.title("Violentómetro Online")
-st.write("Prototipo para detectar discurso de odio en línea contra mujeres.")
+st.write("Prototipo para detectar discurso de odio en línea.")
 
 sentence = st.text_area("Ingresa tu mensaje a analizar:")
 
