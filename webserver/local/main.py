@@ -50,3 +50,7 @@ def predict():
             return "Couldn't read sentence", 400
         pred = predict_sentiment(sentence)
         return jsonify({"prediction": pred})
+
+
+if __name__ == "__main__":
+    app.run()
